@@ -1,0 +1,67 @@
+@font-face { 
+
+}
+
+/*CARACTERISTICAS GERAIS*/
+:root {
+  --blue:#17A6E4;
+  --green:#3FE168;
+  --bg-black: #000000;
+  --gray:#CCCCCC; 
+  background-color: var(--bg-black);
+  color: var(--gray);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*CARACTERES ESPECIAIS (FAVORITO E DELETAR)*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.favorite-button { /*BOTAO DE FAVORITOS*/
+  background-color: #67647700;
+  color: var(--gray);
+  border: none;
+  cursor: pointer;
+} 
+.favorite-button:hover{ /*MUDAR A COR DO BOTAO QUANDO CLICAR*/
+  color: #ffffff;
+}
+
+
+.delete-button { /*BOTAO DE DELETAR*/
+  position: absolute;
+  background-color: #67647700;
+  color: var(--gray);
+  border: none;
+  cursor: pointer;
+} 
+.delete-button:hover { /*MUDAR A COR DO BOTAO QUANDO CLICAR*/
+  color: #ffffff;
+}
+
+.app{ /*APLICATIVO GERAL*/ 
+  height: 100vh;
+  margin-left: 200px;
+  padding-left: 30px;
+  padding-right: 50px;
+  background:linear-gradient(to bottom,var(--blue),transparent 75%);
+  height: 100vh;
+}
+
+.playlist{/*AREA EM QUE APARECE AS MUSICAS*/
+  display: flex;
+  flex-direction: column;
+}
+.music{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
