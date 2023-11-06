@@ -40,15 +40,35 @@ function Playlist(){
                 <p>Red Hot Chilli Peppers, Coldplay e mais</p>
                 <p><span>Spotify - 50 músicas</span> <span className='playlist-time' >1h 7min</span></p>
             </div>
+            
       </div>
+
+        {/*BOTÕES DO MEIO*/}
+      <div className='middle-buttons'>
+        <button className='play-button'>
+          <span className="material-symbols-outlined"> play_circle </span>
+        </button>
+        <button className='favorite-playlist-button'>
+          <span className="material-symbols-outlined"> favorite </span>
+        </button>
+        <button className='download-button'>
+          <span className="material-symbols-outlined"> download_for_offline </span>
+        </button>
+        <button className='more-options-button'>
+          <span className="material-symbols-outlined"> more_horiz </span>
+        </button>
+      </div>
+
       {/*CABEÇALHO PARA AREA EM QUE APARECE AS MUSICAS*/}
       <div className="header-playlist">
         <div className='header-playlist-tittle'> <span className="material-symbols-outlined"> numbers </span> <h4> TÍTULO </h4> </div>
         <h4>ÁLBUM</h4>
         <span className="material-symbols-outlined"> schedule </span>
       </div>
+
        {/*LINHA SEPARANDO O CABEÇALHO*/}
       <hr className='line-header'></hr>
+
       {/*AREA EM QUE APARECE AS MUSICAS*/}
       <div className="playlist"> 
         {musics.map ((music) => ( // Mapear os itens da função "musics"
@@ -71,7 +91,7 @@ function Playlist(){
                 <button className='favorite-button'>
                   <span className="material-symbols-outlined"> favorite </span>
                 </button>
-                <button className='delete-button'>
+                  <button className='delete-button'>
                 <span className="material-symbols-outlined"> delete </span>
                 </button>
               </div>
