@@ -38,14 +38,14 @@ function Playlist(){
                 <p>Playlist</p>
                 <h1>Daily Mix 1</h1>
                 <p>Red Hot Chilli Peppers, Coldplay e mais</p>
-                <p>Spotify - 50 músicas 1h 7min</p>
+                <p><span>Spotify - 50 músicas</span> <span className='playlist-time' >1h 7min</span></p>
             </div>
       </div>
       {/*CABEÇALHO PARA AREA EM QUE APARECE AS MUSICAS*/}
       <div className="header-playlist">
-        <h4># TITULO</h4>
-        <h4>ALBUM</h4>
-        <h4>Relogio</h4>
+        <div className='header-playlist-tittle'> <span className="material-symbols-outlined"> numbers </span> <h4> TÍTULO </h4> </div>
+        <h4>ÁLBUM</h4>
+        <span className="material-symbols-outlined"> schedule </span>
       </div>
        {/*LINHA SEPARANDO O CABEÇALHO*/}
       <hr className='line-header'></hr>

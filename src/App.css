@@ -2,6 +2,10 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+h1 {
+    font-size: 40px;
+}
+
 /*CARACTERISTICAS GERAIS*/
 :root {
   --blue:#17A6E4;
@@ -47,16 +51,30 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: end;
-  /*border: 1px solid black;*/
+  color: white;
+  font-weight: 700;
+}
+.playlist-time{
+    color: rgb(200, 200, 200);
 }
 .header-playlist{ /*CABEÇALHO PARA AREA EM QUE APARECE AS MUSICAS*/
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 5px;
+  align-items: center;
+  color: gray;
+}
+.header-playlist-tittle{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .line-header{ /*LINHA SEPARANDO O CABEÇALHO*/
-  color: var(--gray);
+  border-color: rgb(75, 75, 75); 
+  border-style: solid;
+  border-top: none;
+  height: 1px;
   margin-bottom: 30px;
 }
 .playlist{/*AREA EM QUE APARECE AS MUSICAS*/
@@ -73,6 +91,7 @@ body {
   line-height:20px ;
 }
 .material-symbols-outlined {/*CARACTERES ESPECIAIS (FAVORITO E DELETAR)*/
+  margin: 5px;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -86,7 +105,7 @@ body {
   border: none;
   cursor: pointer;
 } 
-.favorite-button:hover{ /*MUDAR A COR DO BOTAO QUANDO CLICAR*/
+.favorite-button:hover{ /*MUDAR A COR DO BOTAO QUANDO PASSAR O MOUSE*/
   color: #ffffff;
 }
 .delete-button { /*BOTAO DE DELETAR*/
@@ -95,7 +114,7 @@ body {
   border: none;
   cursor: pointer;
 } 
-.delete-button:hover { /*MUDAR A COR DO BOTAO QUANDO CLICAR*/
+.delete-button:hover { /*MUDAR A COR DO BOTAO QUANDO PASSAR O MOUSE*/
   color: #ffffff;
 }
 
