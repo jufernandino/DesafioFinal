@@ -63,10 +63,38 @@ h1 {
   margin-top: 0px;
   margin-bottom: 60px;
 }
-.play-button{}
-.favorite-playlist-button{}
-.download-button{}
-.more-options-button{}
+.play-button{
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  color: #3FE168;
+  cursor: pointer;
+}
+.play-button:hover{color: white;}
+.favorite-playlist-button{
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--gray);
+  cursor: pointer;
+}
+.favorite-playlist-button:hover{color: white;}
+.download-button{
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--gray);
+  cursor: pointer;
+}
+.download-button:hover{color: white;}
+.more-options-button{
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--gray);
+  cursor: pointer;
+}
+.more-options-button:hover{color: white;}
 
 
 .header-playlist{ /*CABEÇALHO PARA AREA EM QUE APARECE AS MUSICAS*/
@@ -114,7 +142,7 @@ h1 {
 }
 .favorite-button { /*BOTAO DE FAVORITOS*/
   position: relative;
-  background-color: #67647700;
+  background-color: transparent;
   color: var(--gray);
   border: none;
   cursor: pointer;
@@ -123,7 +151,7 @@ h1 {
   color: #ffffff;
 }
 .delete-button { /*BOTAO DE DELETAR*/
-  background-color: #67647700;
+  background-color: transparent;
   color: var(--gray);
   border: none;
   cursor: pointer;
