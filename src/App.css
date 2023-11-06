@@ -17,8 +17,56 @@
   box-sizing: border-box;
 }
 
-/*CARACTERES ESPECIAIS (FAVORITO E DELETAR)*/
-.material-symbols-outlined {
+.app{ /*APLICATIVO GERAL*/ 
+  height: 100vh;
+  margin-left: 200px;
+  padding-left: 30px;
+  padding-right: 50px;
+  background:linear-gradient(to bottom,var(--blue),transparent 75%);
+  height: 100vh;
+}
+.area{  /*AREA PRINCIPAL*/
+  display:flex;
+  flex-direction: row;
+  padding-bottom: 100px;
+  padding-top:100px;
+}
+.image-playlist{ /*IMAGEM DA PLAYLIST*/
+  width:250px;
+  height: 250px;
+  background-image:url("./Imgs/img_Californication.jpg");
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 50px;
+}
+.name-playlist{
+  line-height: 40px;
+}
+.header-playlist{ /*CABEÇALHO PARA AREA EM QUE APARECE AS MUSICAS*/
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.line-header{ /*LINHA SEPARANDO O CABEÇALHO*/
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+.playlist{/*AREA EM QUE APARECE AS MUSICAS*/
+  display: flex;
+  flex-direction: column;
+}
+.music{ /*MUSICAS*/
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  line-height: 60px;
+}
+.TITLE{ /*NOME DA MUSICA E DO ARTISTA*/
+  line-height:20px ;
+}
+.material-symbols-outlined {/*CARACTERES ESPECIAIS (FAVORITO E DELETAR)*/
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -26,6 +74,7 @@
   'opsz' 24
 }
 .favorite-button { /*BOTAO DE FAVORITOS*/
+  position: relative;
   background-color: #67647700;
   color: var(--gray);
   border: none;
@@ -34,10 +83,7 @@
 .favorite-button:hover{ /*MUDAR A COR DO BOTAO QUANDO CLICAR*/
   color: #ffffff;
 }
-
-
 .delete-button { /*BOTAO DE DELETAR*/
-  position: absolute;
   background-color: #67647700;
   color: var(--gray);
   border: none;
@@ -47,21 +93,4 @@
   color: #ffffff;
 }
 
-.app{ /*APLICATIVO GERAL*/ 
-  height: 100vh;
-  margin-left: 200px;
-  padding-left: 30px;
-  padding-right: 50px;
-  background:linear-gradient(to bottom,var(--blue),transparent 75%);
-  height: 100vh;
-}
 
-.playlist{/*AREA EM QUE APARECE AS MUSICAS*/
-  display: flex;
-  flex-direction: column;
-}
-.music{
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between;
-}
