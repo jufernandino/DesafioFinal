@@ -19,7 +19,7 @@
 
 .app{ /*APLICATIVO GERAL*/ 
   height: 100vh;
-  margin-left: 200px;
+  margin-left: 224px;
   padding-left: 30px;
   padding-right: 50px;
   background:linear-gradient(to bottom,var(--blue),transparent 75%);
@@ -32,10 +32,10 @@
   padding-top:100px;
 }
 .image-playlist{ /*IMAGEM DA PLAYLIST*/
-  width:250px;
-  height: 250px;
+  width:224px;
+  height: 224px;
   background-image:url("./Imgs/img_Californication.jpg");
-  background-size: 250px 250px;
+  background-size: 224px 224px;
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 50px;
