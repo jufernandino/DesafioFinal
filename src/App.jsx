@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Music from "./components/music";
 
 function Playlist(){
 
@@ -24,7 +25,32 @@ function Playlist(){
       album: "Cidade Negra AcÚstico MTV",
       favorite: false,
     },
+    {
+      id:4,
+      title: "Clocks",
+      artist: "Coldplay",
+      album: "A Rush of Blood to the Head",
+      favorite: false,
+    },
   ]);
+
+  //FUNÇÃO PARA REMOVER UMA MUSICA DA PLAYLIST
+  const remove = (id) => {
+    const newMusic = [...musics]
+    const filteredMusics = newMusic.filter(music => 
+      music.id !== id ? music : null
+    );
+    setMusics(filteredMusics);
+  };
+
+  //FUNÇÃO PARA ADICIONAR UMA MUSICA AOS FAVORITOS 
+  const favorite = (id) => {
+    const newMusic = [...musics]
+    newMusic.map((music) =>
+      music.id === id ? (music.favorite = !music.favorite) : music
+    );
+    setMusics(newMusic);
+  };
   
   return ( 
     //APLICATIVO GERAL
@@ -71,41 +97,17 @@ function Playlist(){
 
       {/*AREA EM QUE APARECE AS MUSICAS*/}
       <div className="playlist"> 
-        {musics.map ((music) => ( // Mapear os itens da função "musics"
-          <ul key={music.id}>  {/*Listar todas as músicas*/}
-            <div className="music">
-              
-              {/*AREA #TITULO*/}
-              <div className="TITLE">
-                <p>{music.title}</p>
-                <p>{music.artist}</p>
-              </div>
-
-              {/*AREA ALBUM*/}
-              <div className="ALBUM">
-                <p>({music.album})</p>
-              </div>
-
-              {/*AREA COM INTERAÇÕES*/}
-              <div className="ITERACTIONS">
-                <button className='favorite-button'>
-                  <span className="material-symbols-outlined"> favorite </span>
-                </button>
-                  <button className='delete-button'>
-                <span className="material-symbols-outlined"> delete </span>
-                </button>
-              </div>
-
-            </div>
-          </ul> //Fim da listagem das músicas
-        ))} {/*Fim do map*/}
-      
+        {musics.map ((music) => ( //Mapear os itens da função "musics"
+          <ul key={music.id}> {/*Listar todas as música */}
+            < Music music={music} remove={remove} favorite={favorite}/> 
+          </ul> // Fim da listagem das músicas
+        ))} {/*Fim do map */}
+        
       </div> {/*FIM DA AREA DAS MUSICAS*/}
-
     </div>
     //FIM DO APLICATIVO GERAL
-  );
-}
+  ); //FIM DO RETURN
+} 
 
 function App(){
   
