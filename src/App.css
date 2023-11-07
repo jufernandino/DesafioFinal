@@ -32,7 +32,7 @@ h1 {
 .area{  /*AREA PRINCIPAL*/
   display:flex;
   flex-direction: row;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   padding-top:100px;
 }
 .image-playlist{ /*IMAGEM DA PLAYLIST*/
@@ -60,18 +60,33 @@ h1 {
 
 .middle-buttons{ /*BOTOES DO MEIO (CONTROLE DA PLAYLIST)*/
   margin-top: 0px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+  display: flex;
+}
+.play-button-box{
+  margin: 5px;
+  margin-left: 0px;
+  width: 74px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .play-button{
-  margin: 10px;
-  background-color: transparent;
   border: none;
-  color: #3FE168;
   cursor: pointer;
+  width: 72px; 
+  height: 72px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='%233fe168'><path d='M0 0h48v48H0z' fill='none'></path><path d='M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-4 29V15l12 9-12 9z' fill='%233fe168' class='fill-000000'></path></svg>");
+  background-size: cover;
 }
-.play-button:hover{color: white;}
+.play-button:hover{
+  width: 74px; 
+  height: 74px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%2320e053'><path d='M0 0h48v48H0z' fill='none'></path><path d='M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-4 29V15l12 9-12 9z' fill='%2320e053' class='fill-000000 fill-3fe168'></path></svg>");
+}
 .favorite-playlist-button{
-  margin: 10px;
+  margin: 5px;
   background-color: transparent;
   border: none;
   color: var(--gray);
@@ -79,7 +94,7 @@ h1 {
 }
 .favorite-playlist-button:hover{color: white;}
 .download-button{
-  margin: 10px;
+  margin: 5px;
   background-color: transparent;
   border: none;
   color: var(--gray);
@@ -87,13 +102,18 @@ h1 {
 }
 .download-button:hover{color: white;}
 .more-options-button{
-  margin: 10px;
+  margin: 5px;
   background-color: transparent;
   border: none;
   color: var(--gray);
   cursor: pointer;
 }
 .more-options-button:hover{color: white;}
+.favorite-playlist-button .material-symbols-outlined,
+.download-button .material-symbols-outlined,
+.more-options-button .material-symbols-outlined {
+  font-size: 32px; /* Aumenta o tamanho dos ícones para 32 pixels */
+}
 
 
 .header-playlist{ /*CABEÇALHO PARA AREA EM QUE APARECE AS MUSICAS*/
@@ -158,5 +178,4 @@ h1 {
 .delete-button:hover { /*MUDAR A COR DO BOTAO QUANDO PASSAR O MOUSE*/
   color: #ffffff;
 }
-
 

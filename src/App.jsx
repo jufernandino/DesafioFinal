@@ -22,7 +22,7 @@ function Playlist(){
       id:3,
       title: "Cidade Negra",
       artist: "Firmamento",
-      album: "Cidade Negra AcÚstico MTV",
+      album: "Cidade Negra Acústico MTV",
       favorite: false,
     },
     {
@@ -71,9 +71,9 @@ function Playlist(){
 
         {/*BOTÕES DO MEIO*/}
       <div className='middle-buttons'>
-        <button className='play-button'>
-          <span className="material-symbols-outlined"> play_circle </span>
-        </button>
+        <div className='play-button-box'>
+          <button className="play-button"></button>
+        </div>
         <button className='favorite-playlist-button'>
           <span className="material-symbols-outlined"> favorite </span>
         </button>
