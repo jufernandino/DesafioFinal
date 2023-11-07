@@ -1,0 +1,15 @@
+.music{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ALBUM{
+    width: 500px;
+    text-align: center;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-23%);
+    overflow: visible;
+    white-space: nowrap;
+}
