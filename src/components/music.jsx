@@ -5,11 +5,13 @@ import './music.css'
 const Music = ({ music, remove, favorite }) => {
     return (
         <div className="music"> 
-       
             {/*AREA #TITULO*/}
             <div className="TITLE">
-                <p>{music.title}</p>
-                <p>{music.artist}</p>
+                <p>{music.id}&emsp;</p>
+                <div id='container-id'>
+                    <p>{music.title}</p>
+                    <p>{music.artist}</p>
+                </div>
             </div>
             {/*AREA ALBUM*/}
             <div className="ALBUM">

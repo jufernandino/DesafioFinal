@@ -150,6 +150,11 @@ h1 {
 }
 .TITLE{ /*NOME DA MUSICA E DO ARTISTA*/
   line-height:20px ;
+  display: flex;
+  flex-direction: inline;
+}
+.container-id{
+  display: flex;
 }
 .material-symbols-outlined {/*CARACTERES ESPECIAIS (FAVORITO E DELETAR)*/
   margin: 5px;
